@@ -1,0 +1,15 @@
+import React from "react";
+import ReactDOM from "react-dom";
+
+const fname = "USAMA";
+const lname = "ANWAR";
+
+ReactDOM.render(
+  <>
+    <h1>
+      {`My first name is ${fname} my last name is ${lname}`}
+    </h1>
+    <p>My lucky number is {3+4}</p>
+  </>,
+  document.getElementById("root")
+);
