@@ -1,0 +1,17 @@
+import React from 'react';
+import ReactDOM from 'react-dom';
+
+ReactDOM.render(
+  <>
+    <h1>UA Netflix Pick</h1>
+    <h2>List of my fav 5 series</h2>
+    <ol>
+      <li>DARK</li>
+      <li>Extra-Curricular</li>
+      <li>My Holo Love</li>
+      <li>My first-2 Love</li>
+      <li>Mr Robot</li>
+    </ol>
+  </>
+  ,document.getElementById('root')
+);
