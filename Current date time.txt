@@ -1,0 +1,21 @@
+import React from "react";
+import ReactDOM from "react-dom";
+
+const name = "USAMA ANWAR";
+const currDate = new Date().toLocaleDateString();
+const currTime = new Date().toLocaleTimeString();
+
+ReactDOM.render(
+  <>
+  <h1>
+    Hello, My Name is {name}
+  </h1>
+  <p>
+    todays Date is {currDate}
+  </p>
+  <p>
+    todays time is {currTime}
+  </p>
+  </>,
+  document.getElementById("root")
+);
