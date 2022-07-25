@@ -1,0 +1,28 @@
+import React from "react";
+import ReactDOM from "react-dom";
+import "./index.css"
+
+let curDate = new Date(2021, 5, 5, 12);
+    curDate = curDate.getHours();
+let greetings = "";
+const cstyle = {};
+
+  if(curDate >= 3 && curDate < 11){
+    greetings = "Good Morning";
+    cstyle.color = "green";
+  }else if(curDate >= 11 && curDate < 17){
+    greetings = "Good Afternoon";
+    cstyle.color = "Yellow";
+  }else{
+    greetings = "Good Night";
+    cstyle.color = "grey";
+  }
+
+ReactDOM.render(
+  <>
+  <div>
+  <h1>Hello <span style={cstyle}>{greetings}</span> USAMA</h1>
+  </div>
+  </>
+  ,document.getElementById("root")
+);
